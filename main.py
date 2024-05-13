@@ -25,10 +25,11 @@ pprint("[2] Add new sales")
 rint("[3] View Reports")
 print("[4] Exit")
 selected = Prompt.ask("SELECT", choices=choices, show_choices=False)
-if selected == "4":
-    Console().clear()
-print("[red]\nClosing the program... Goodbye!")
-break
+	
+    if selected == "4":
+      Console().clear()
+      print("[red]\nClosing the program... Goodbye!")
+      break
 if __name__ == "__main__":
     Console().clear()
     main()
